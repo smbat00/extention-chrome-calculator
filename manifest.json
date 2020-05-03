@@ -1,0 +1,22 @@
+{
+    "name":"Calculator",
+    "version":"0.1",
+    "manifest_version":2,
+    "description":"Calculator for Chrom",
+    "content_scripts": [
+      {
+        "matches": ["https://*/*", "http://*/*"],
+        "js": ["script.js"],
+        "run_at": "document_end"
+      }
+    ],
+    "permissions":[
+        "contextMenus", 
+        "tabs",
+        "http://*/*",
+        "https://*/*"
+        ],
+    "icons":{
+        "128":"icon.png"
+    }
+}
